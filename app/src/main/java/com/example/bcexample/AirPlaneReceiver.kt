@@ -9,6 +9,7 @@ class AirPlaneReceiver: BroadcastReceiver() {
 
     override fun onReceive(context: Context?, intent: Intent?) {
         Log.d("debugApp", "Broadcast received")
+        Log.d("debugApp", "action : " + (intent?.action ?: ""))
     }
 
 }
